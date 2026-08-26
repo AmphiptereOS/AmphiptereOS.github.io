@@ -1,31 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Amphiptere OS — Purple Team Linux</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amphiptere OS | Purple Team Linux Distro</title>
 <style>
-body{margin:0;font-family:system-ui,Segoe UI;background:#0a0a0f;color:#e6e6ff}
-header{padding:60px 20px;text-align:center;background:linear-gradient(135deg,#1a0033,#000)}
-h1{font-size:3rem;margin:0;color:#a855f7}h1 span{color:#fff}
-.btn{display:inline-block;margin:12px;padding:14px 28px;background:#a855f7;color:#fff;border-radius:12px;text-decoration:none;font-weight:700}
-section{max-width:900px;margin:40px auto;padding:0 20px}
-.card{background:#15151f;border:1px solid #2a2a3a;border-radius:16px;padding:24px;margin:16px 0}
-footer{text-align:center;padding:40px;color:#888}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#08080e;color:#e9e9ff;font-family:'Segoe UI',system-ui; line-height:1.6}
+.hero{min-height:90vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px;background:radial-gradient(circle at top,#2a0a4a 0%,#08080e 60%)}
+.hero h1{font-size:4rem;font-weight:900;letter-spacing:-1px} .hero h1 b{color:#a855f7}
+.hero p{max-width:600px;margin:15px 0 25px;color:#b8b8cc;font-size:1.15rem}
+.btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.btn{padding:14px 32px;border-radius:999px;text-decoration:none;font-weight:800;transition:.2s}
+.btn-primary{background:#a855f7;color:#fff} .btn-primary:hover{background:#9333ea;transform:translateY(-2px)}
+.btn-ghost{border:1px solid #333;color:#fff;background:#14141f}
+section{max-width:1100px;margin:0 auto;padding:60px 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.card{background:#12121a;border:1px solid #232330;border-radius:20px;padding:26px}
+.card h3{color:#c084fc;margin-bottom:8px}
+.badge{display:inline-block;background:#1e1e2f;border:1px solid #3a2a5a;color:#a855f7;padding:4px 10px;border-radius:999px;font-size:.8rem;margin-bottom:10px}
+footer{border-top:1px solid #1a1a28;text-align:center;padding:40px;color:#666}
+a{color:#a855f7}
 </style>
 </head>
 <body>
-<header>
-<h1>Amphiptere<span>OS</span></h1>
-<p>Debian-based Purple Team Linux for Ethical Hackers, SOC Analysts & Cybersecurity Enthusiasts</p>
-<a class="btn" href="https://github.com/AmphiptereOS/AmphiptereOS.github.io/releases">Download ISO</a>
-<a class="btn" style="background:#222" href="https://youtube.com/@amphiptere-os">YouTube</a>
-<p style="margin-top:20px;color:#aaa">v2.5.1 | Debian 12 Base | XFCE | amphiptereos@gmail.com</p>
-</header>
+<div class="hero">
+<div class="badge">v2.5.1 STABLE • DEBIAN 12 • XFCE</div>
+<h1>Amphiptere<b>OS</b></h1>
+<p>The Purple Team Linux — Red Offense + Blue Defense in ONE OS. 500+ tools, lightweight, built for ethical hackers & SOC analysts.</p>
+<div class="btns">
+<a class="btn btn-primary" href="#">Download ISO (4.2GB)</a>
+<a class="btn btn-ghost" href="https://github.com/AmphiptereOS">GitHub</a>
+</div>
+<p style="margin-top:18px;font-size:.9rem;color:#888">amphiptereos@gmail.com | youtube.com/@amphiptere-os | Kerala, India</p>
+</div>
+
 <section>
-<div class="card"><h2>What is Amphiptere OS?</h2><p>Amphiptere OS is a professional Purple Team distribution bridging Red Team offense and Blue Team defense. Built on Debian stable for performance, stability and 500+ pre-installed tools.</p></div>
-<div class="card"><h2>Key Features</h2><ul><li>500+ Security Tools - Nmap, Metasploit, Burp Suite, Wireshark, Splunk</li><li>Purple Team Ready - Attack + Defend in one OS</li><li>Lightweight XFCE - Runs on low-end hardware</li><li>Forensics & OSINT, Reverse Engineering, Cloud Security Labs</li></ul></div>
-<div class="card"><h2>Official Links</h2><p>GitHub: github.com/AmphiptereOS<br>Contact: amphiptereos@gmail.com<br>Maintainer: Arjun Raj (arjunraj-cyber)</p></div>
+<div class="grid">
+<div class="card"><h3>⚔️ Purple Team Core</h3><p>Seamlessly switch between attack and defense. Nmap, Metasploit, Burp Suite, Wireshark, Splunk, Autopsy in one menu.</p></div>
+<div class="card"><h3>🚀 Debian Stable</h3><p>Not rolling-release breakage. Rock-solid Debian 12 base, XFCE lightweight, runs on 4GB RAM, boots in <30s.</p></div>
+<div class="card"><h3>🛡️ SOC Ready</h3><p>Built-in SIEM labs, log analysis, forensics toolkit, OSINT framework & reverse engineering suite for real SOC training.</p></div>
+</div>
+<div class="card" style="margin-top:18px">
+<h3>Why DistroWatch Should List Us?</h3>
+<p><b>Origin:</b> India | <b>Base:</b> Debian | <b>Desktop:</b> XFCE | <b>Package:</b> DEB | <b>Arch:</b> x86_64 | <b>Maintainer:</b> Arjun Raj (arjunraj-cyber) | <b>Website:</b> amphiptereos.github.io | <b>Contact:</b> amphiptereos@gmail.com</p>
+<p style="margin-top:10px">We are a fully working ISO (tested on bare metal & VM), not a remaster script. Active YouTube documentation, community driven.</p>
+</div>
 </section>
-<footer>© 2026 Amphiptere OS — Open Source | Debian-based</footer>
+
+<footer>© 2026 Amphiptere OS — Open Source Purple Team Distro | Built with ❤️ in India</footer>
 </body>
 </html>
