@@ -3,51 +3,104 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Amphiptere OS | Purple Team Linux Distro</title>
+<title>Amphiptere OS | Purple Team Linux</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:#08080e;color:#e9e9ff;font-family:'Segoe UI',system-ui; line-height:1.6}
-.hero{min-height:90vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px;background:radial-gradient(circle at top,#2a0a4a 0%,#08080e 60%)}
-.hero h1{font-size:4rem;font-weight:900;letter-spacing:-1px} .hero h1 b{color:#a855f7}
-.hero p{max-width:600px;margin:15px 0 25px;color:#b8b8cc;font-size:1.15rem}
+body{background:#08080e;color:#e9e9ff;font-family:'Segoe UI',system-ui;line-height:1.6}
+.hero{min-height:85vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:40px 20px;background:radial-gradient(circle at top,#2a0a4a 0%,#08080e 65%)}
+.hero img{width:110px;height:110px;border-radius:20px;margin-bottom:18px;box-shadow:0 0 30px #a855f755}
+.hero h1{font-size:3.6rem;font-weight:900;letter-spacing:-1px} .hero h1 b{color:#a855f7}
+.hero p{max-width:700px;margin:16px 0 26px;color:#b8b8cc;font-size:1.18rem}
 .btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
-.btn{padding:14px 32px;border-radius:999px;text-decoration:none;font-weight:800;transition:.2s}
+.btn{padding:14px 30px;border-radius:999px;text-decoration:none;font-weight:800;transition:.2s}
 .btn-primary{background:#a855f7;color:#fff} .btn-primary:hover{background:#9333ea;transform:translateY(-2px)}
 .btn-ghost{border:1px solid #333;color:#fff;background:#14141f}
-section{max-width:1100px;margin:0 auto;padding:60px 20px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+section{max-width:1100px;margin:0 auto;padding:50px 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
 .card{background:#12121a;border:1px solid #232330;border-radius:20px;padding:26px}
-.card h3{color:#c084fc;margin-bottom:8px}
-.badge{display:inline-block;background:#1e1e2f;border:1px solid #3a2a5a;color:#a855f7;padding:4px 10px;border-radius:999px;font-size:.8rem;margin-bottom:10px}
-footer{border-top:1px solid #1a1a28;text-align:center;padding:40px;color:#666}
-a{color:#a855f7}
+.card h3{color:#c084fc;margin-bottom:10px;font-size:1.2rem}
+.card ul{padding-left:18px;color:#b8b8cc}
+.badge{display:inline-block;background:#1e1e2f;border:1px solid #3a2a5a;color:#a855f7;padding:5px 12px;border-radius:999px;font-size:.8rem;margin-bottom:12px}
+.screenshots{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-top:16px}
+.screenshots img{width:100%;border-radius:16px;border:1px solid #232330;background:#0e0e16}
+footer{border-top:1px solid #1a1a28;text-align:center;padding:40px;color:#666;font-size:.9rem}
+a{color:#a855f7;text-decoration:none}
 </style>
 </head>
 <body>
+
 <div class="hero">
-<div class="badge">v2.5.1 STABLE • DEBIAN 12 • XFCE</div>
+<img src="Amphiptere-logo.png" alt="Amphiptere OS Logo" onerror="this.style.display='none'">
+<div class="badge">v2.5.1 • DEBIAN 12 • XFCE • 2.9GB ISO</div>
 <h1>Amphiptere<b>OS</b></h1>
-<p>The Purple Team Linux — Red Offense + Blue Defense in ONE OS. 500+ tools, lightweight, built for ethical hackers & SOC analysts.</p>
+<p>The Purple Team Linux Distro with Custom Tools, lightweight, built for Red Team + Blue Team & Cybersecurity Tool Creators.</p>
 <div class="btns">
-<a class="btn btn-primary" href="#">Download ISO (4.2GB)</a>
+<a class="btn btn-primary" href="https://sourceforge.net/projects/amphiptere-os/">Download ISO on SourceForge</a>
 <a class="btn btn-ghost" href="https://github.com/AmphiptereOS">GitHub</a>
 </div>
-<p style="margin-top:18px;font-size:.9rem;color:#888">amphiptereos@gmail.com | youtube.com/@amphiptere-os | Kerala, India</p>
+<p style="margin-top:16px;font-size:.85rem;color:#777">Contact: amphiptereos@gmail.com</p>
 </div>
 
 <section>
 <div class="grid">
-<div class="card"><h3>⚔️ Purple Team Core</h3><p>Seamlessly switch between attack and defense. Nmap, Metasploit, Burp Suite, Wireshark, Splunk, Autopsy in one menu.</p></div>
-<div class="card"><h3>🚀 Debian Stable</h3><p>Not rolling-release breakage. Rock-solid Debian 12 base, XFCE lightweight, runs on 4GB RAM, boots in <30s.</p></div>
-<div class="card"><h3>🛡️ SOC Ready</h3><p>Built-in SIEM labs, log analysis, forensics toolkit, OSINT framework & reverse engineering suite for real SOC training.</p></div>
+<div class="card">
+<h3>Purple Team Core</h3>
+<p style="color:#b8b8cc;margin-bottom:10px">Purple Team is where Red (Offense) meets Blue (Defense). Amphiptere OS is built for both — attack, defend, and create.</p>
+<p style="color:#e9e9ff;font-weight:600;margin:10px 0 6px">Custom Built Tools:</p>
+<ul>
+<li>Acid Cracker (offline password cracker)</li>
+<li>Owl-Auditor</li>
+<li>Huntd-Ghost</li>
+<li>Amphiptere Sentinel</li>
+<li>Amphiptere-ops</li>
+<li>Ruler</li>
+<li>+ More available soon</li>
+</ul>
+<p style="margin-top:12px;color:#888;font-size:.9rem">Pre-installed: nmap, wireshark, Aircrack-ng, John the Ripper</p>
 </div>
+
+<div class="card">
+<h3>Debian Stable</h3>
+<p>Amphiptere OS is a lightweight, custom Linux distribution built on top of Debian Stable specifically for cybersecurity tasks. Rock-solid, Ultra lightweight, XFCE, Runs on 2GB RAM.</p>
+</div>
+
+<div class="card">
+<h3>Ready Labs</h3>
+<p>Built-in lightweight custom tools for Cybersecurity labs, Red Training & Blue Training toolkit, OSINT framework & more.</p>
+</div>
+</div>
+
 <div class="card" style="margin-top:18px">
-<h3>Why DistroWatch Should List Us?</h3>
-<p><b>Origin:</b> India | <b>Base:</b> Debian | <b>Desktop:</b> XFCE | <b>Package:</b> DEB | <b>Arch:</b> x86_64 | <b>Maintainer:</b> Arjun Raj (arjunraj-cyber) | <b>Website:</b> amphiptereos.github.io | <b>Contact:</b> amphiptereos@gmail.com</p>
-<p style="margin-top:10px">We are a fully working ISO (tested on bare metal & VM), not a remaster script. Active YouTube documentation, community driven.</p>
+<h3>About Amphiptere OS</h3>
+<p>Amphiptere OS is a custom Debian-based operating system built specially for Purple Team operators and cybersecurity enthusiasts. Starting from the official Debian ISO, it is custom-built for people who love building their own cybersecurity tools and giving security researchers and students a ready-to-go platform to create, test, and run their own scripts.</p>
+<p style="margin-top:12px">When you need a reliable environment for ethical hacking, penetration testing, and security auditing, you want something streamlined. You want an operating system that gets out of your way, gives you precise control, and comes equipped with the exact utilities you need for the job.</p>
 </div>
+
+<div class="card" style="margin-top:18px">
+<h3>What makes Amphiptere OS unique</h3>
+<ul>
+<li><b>Attack + Defense:</b> It includes tools for both attack and defense testing.</li>
+<li><b>Ultra Lightweight:</b> It runs smoothly even on just 2GB of RAM, with an ISO size of 2.9GB.</li>
+<li><b>No Bloat:</b> Unlike other distributions that overwhelm you with hundreds of pre-installed applications you will never use, Amphiptere only comes with essential open-source utilities and custom tools. That leaves you with massive free storage, allowing you to download and configure only the tools you actually want.</li>
+<li><b>Optimized Desktop:</b> You get a clean, fast desktop optimized for lab work.</li>
+</ul>
+</div>
+
+<div class="card" style="margin-top:18px">
+<h3>Screenshots</h3>
+<div class="screenshots">
+<img src="screenshots1.png" alt="Screenshot 1">
+<img src="screenshots2.png" alt="Screenshot 2">
+<img src="screenshots3.png" alt="Screenshot 3">
+</div>
+</div>
+
 </section>
 
-<footer>© 2026 Amphiptere OS — Open Source Purple Team Distro | Built with ❤️ in India</footer>
+<footer>
+© 2026 Amphiptere OS — Open Source | Debian-based Purple Team Distro<br>
+<a href="https://sourceforge.net/projects/amphiptere-os/">SourceForge</a> • <a href="https://github.com/AmphiptereOS">GitHub</a> • amphiptereos@gmail.com
+</footer>
+
 </body>
 </html>
